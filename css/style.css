@@ -1,0 +1,171 @@
+/*---------------------------
+      Global Styles
+-----------------------------*/
+html {
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom right, rgb(6, 64, 97), rgba(4, 107, 167, .8), rgba(83, 166, 238, 0.5));
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+@font-face {
+    font-family: 'lifelogo-easy';
+    src: url(../Fonts/lifelogo-easy.ttf);
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size:20px;
+  line-height:1.5;
+  margin: 0;
+}
+h1, h2, h3, h4 {
+    font-weight: 400;
+    margin: 0;
+}
+h2, h3, h4 {
+    font-family: 'Archivo Narrow', sans-serif;
+}
+h1 {
+    font-family: 'lifelogo-easy', sans-serif;
+    font-size: 90px;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 30px;
+}
+h4 {
+    font-size: 25px;
+}
+.content-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 50px;
+    overflow: hidden;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+a:hover {
+    background-color: #FFFFFF;
+    color: #D12335;
+    border: 2px solid rgb(107, 104, 104);
+}
+
+/*----------------------------
+    Header & Navigation
+----------------------------*/
+header {
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 50px;
+}
+nav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to bottom right, rgba(230, 124, 58, 1), rgba(245, 149, 39, 0.6));
+    width: 100%;
+    border-bottom: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+header nav li {
+    display: inline-block;
+}
+header nav a {
+    padding: 4px 40px;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+/* nav a:hover {
+    background-color: #FFFFFF;
+    color: #D12335;
+    border: 2px solid rgb(107, 104, 104);
+} */
+
+/*---------------------
+        footer
+----------------------*/
+footer {
+    text-align: center;
+    color: #FFFFFF;
+}
+    
+.contact-info a {
+    padding: 2px 40px;
+    display: inline-block;
+    font-size: 25px;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+.contact-info a:hover {
+    background-color: #FFFFFF;
+    color: #D12335;
+    border: 2px solid rgb(107, 104, 104);
+}
+
+/*----------------------
+        About Me
+-----------------------*/
+#about {
+    color: #FFFFFF;
+}
+
+/*----------------------
+    Work Experience 
+----------------------*/
+.work {
+    color: #FFFFFF;
+    padding: 30px;
+    
+}
+h3 ~ p {
+  margin: 0;
+}
+.job-description {
+    margin-bottom: 25px;
+}
+.job-description p:first-of-type {
+    margin-top: 0;
+}
+  
+/*--------------------- 
+    Education 
+---------------------*/
+.education {
+    background: linear-gradient(to bottom right, rgba(230, 124, 58, 0.9), rgba(245, 149, 39, 0.6));
+    color: #FFFFFF;
+    padding: 30px;
+}
+p + h3 {
+    margin-top: 30px;
+}
+
+/*---------------------
+        Goals
+---------------------*/
+#goals {
+    color: #FFFFFF;
+}
+
+/*---------------------
+    Media Queries
+----------------------*/
+@media (min-width: 900px) {
+    .col-narrow {
+      width: 30%;
+      float: left;
+      min-height: 175px;
+    }
+    .col-wide {
+      width: 70%;
+      float: left;
+      padding-left: 20px;
+      min-height: 175px;
+    }
+  }
