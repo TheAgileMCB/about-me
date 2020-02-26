@@ -8,17 +8,20 @@ alert('Hello, ' + name + '. Thanks for visiting!');
 
 alert('Please, answer "yes" or "no" to the following questions.');
 
-var study = prompt('Did I study cooking and food science?').toLowerCase();
+var firstQ = function() {while(study !== 'yes' || study !== 'no') {
+       var study = prompt('Did I study cooking and food science?').toLowerCase();
 
-if(study === 'yes') {
+    // alert('Please enter either "yes" or "no."');
+  if(study === 'yes') {
     alert('You are right. For one year out of high school. Good work!');
-} else if(study === 'no') {
+  } else if(study === 'no') {
     alert('No. Not right. Thanks for trying, though.');
 } else {
     alert('Please enter either "yes" or "no."');
 }
+   }}
 
-console.log(study);
+console.log(firstQ);
 
 var dogs = prompt('Do I own 3 dogs?').toLowerCase();
 
@@ -67,3 +70,5 @@ if(sopes === 'yes') {
 }
 
 console.log(sopes);
+
+alert('Thanks for playing ' + name + '.');
