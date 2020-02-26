@@ -2,14 +2,38 @@
 
 console.log('ready to rock');
 
+
+
+window.addEventListener('load', (event) => {
+    console.log('page is locked and loaded');
+
 var name = prompt('Hello! Who are you?');
 
 alert('Hello, ' + name + '. Thanks for visiting!');
 
 alert('Please, answer "yes" or "no" to the following questions.');
 
+
+
+function promptMe() {
+    var firstQ = prompt('Did I study cooking and food science?').toLowerCase();
+while (firstQ !== 'yes') {
+    firstQ = alert('No. Not right. Thanks for trying, though.').toLowerCase();
+}
+}
+
+
+
+
+while(study !== 'yes' || study !== 'no') {
+
+}
+
+
 var firstQ = function() {while(study !== 'yes' || study !== 'no') {
-       var study = prompt('Did I study cooking and food science?').toLowerCase();
+       
+    
+    var study = function () {prompt('Did I study cooking and food science?').toLowerCase();
 
     // alert('Please enter either "yes" or "no."');
   if(study === 'yes') {
@@ -20,6 +44,22 @@ var firstQ = function() {while(study !== 'yes' || study !== 'no') {
     alert('Please enter either "yes" or "no."');
 }
    }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 console.log(firstQ);
 
@@ -72,3 +112,5 @@ if(sopes === 'yes') {
 console.log(sopes);
 
 alert('Thanks for playing ' + name + '.');
+
+});
