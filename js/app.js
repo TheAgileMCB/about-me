@@ -9,13 +9,19 @@ var arrayF = ['No. Not right. Thanks for trying, though.', 'Good guess, but wron
 var arrayA = ['yes', 'no', 'yes', 'yes', 'yes'];
 var arrayD = ['charlie', 'gideon', 'abby'];
 var userPoints = 0
-var name = prompt('Hello! Who are you?');
 var count = 0;
 var randomNumber = Math.ceil(Math.random()*10);
 console.log('random answer: ' + randomNumber);
 
 ////////////////////functions////////////////////////
+function greeting() {
+var name = prompt('Hello! Who are you?');
 alert('Hello, ' + name + '. Thanks for visiting!');
+}
+greeting();
+
+
+function quiz() {
 
 alert('Please, answer "yes" or "no" to the following questions.');
 
@@ -51,10 +57,6 @@ for(var j = 0; j<1; j++) {
 
 
 
-
-
-
-
-
-
 alert(userPoints + ' points! Thanks for playing, ' + name + '!');
+}
+quiz();
