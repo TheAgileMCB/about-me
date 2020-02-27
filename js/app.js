@@ -32,9 +32,12 @@ for(var i=0; i<5; i++) {
     }else{alert(arrayF[i]);}
 }
 
-for (count = 0; count<=4; count++) {
+for (count = 0; count<4; count++) {
     console.log('count:' + count);
-    prompt('Can you guess what number between 1 and 10 I\'m thinking of? Give it a go!');
+    var guess = prompt('Can you guess what number between 1 and 10 I\'m thinking of? Give it a go!');
+    if (guess > randomNumber) {alert('Too high, my    friend!');} else if (guess < randomNumber){alert('Too low, my friend!');} else {alert('Nailed it!');
+        break;
+    }
 }
 
 
@@ -45,7 +48,4 @@ for (count = 0; count<=4; count++) {
 
 
 
-
-
-
-alert('Thanks for playing ' + name + '.');
+alert('Thanks for playing, ' + name + '!');
