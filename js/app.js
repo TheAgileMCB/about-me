@@ -35,7 +35,7 @@ for(var i=0; i<5; i++) {
 
 for (count = 0; count<4; count++) {
     console.log('count:' + count);
-    var guess = prompt('Can you guess what number between 1 and 10 I\'m thinking of? Give it a go!');
+    var guess = parseInt(prompt('Can you guess what number between 1 and 10 I\'m thinking of? Give it a go!'));
     if (guess > randomNumber) {alert('Too high, my friend!');} else if (guess < randomNumber){alert('Too low, my friend!');} else if(guess === randomNumber){alert('Nailed it!');
         userPoints++;
         console.log('points: ' + userPoints);
