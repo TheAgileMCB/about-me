@@ -7,6 +7,7 @@ var arrayQ = ['Did I study cooking and food science?', 'Do I own 3 dogs?', 'Am I
 var arrayT = ['You are right. For one year out of high school. Good work!', 'Correct! I have neither the time nor the money.', 'Yes! And Iowa\'s first Digital Marketing Apprentice.', 'Yep, at 3 different Burger Kings in Omaha, Nebraska.', 'You are right. A solid guess.'];
 var arrayF = ['No. Not right. Thanks for trying, though.', 'Good guess, but wrong.', 'Wrong. But I know you can do better!', 'Incorrect.', 'No, I really do.', 'Please answer "yes" or "no".'];
 var arrayA = ['yes', 'no', 'yes', 'yes', 'yes'];
+var arrayD = ['charlie', 'gideon', 'abby'];
 var userPoints = 0
 var name = prompt('Hello! Who are you?');
 var count = 0;
@@ -28,16 +29,24 @@ for(var i=0; i<5; i++) {
     }else if(answer === arrayA[i]) {
         alert(arrayT[i]);
         userPoints++;
-        console.log('gpoints: ' + userPoints);
+        console.log('points: ' + userPoints);
     }else{alert(arrayF[i]);}
 }
 
 for (count = 0; count<4; count++) {
     console.log('count:' + count);
     var guess = prompt('Can you guess what number between 1 and 10 I\'m thinking of? Give it a go!');
-    if (guess > randomNumber) {alert('Too high, my    friend!');} else if (guess < randomNumber){alert('Too low, my friend!');} else {alert('Nailed it!');
+    if (guess > randomNumber) {alert('Too high, my friend!');} else if (guess < randomNumber){alert('Too low, my friend!');} else if(guess === randomNumber){alert('Nailed it!');
+        userPoints++;
+        console.log('points: ' + userPoints);
         break;
-    }
+    }else {alert('Please, enter a number!');}
+}
+for(var j = 0; j<1; j++) {
+    var answerD = prompt('Which of the following is the name of a dog I have raised?\n Charlie, Moose, Gideon, Abby, Bones, Zack, Scruff McGruff, or Linkin Bark').toLowerCase();
+    if(answerD === arrayD[0] || answerD === arrayD[1] || answerD === arrayD[2]){alert('Good work!');
+        userPoints++;
+        console.log('points: ' + userPoints);}else{alert('Wrong, but good try!');}
 }
 
 
@@ -48,4 +57,4 @@ for (count = 0; count<4; count++) {
 
 
 
-alert('Thanks for playing, ' + name + '!');
+alert(userPoints + ' points! Thanks for playing, ' + name + '!');
